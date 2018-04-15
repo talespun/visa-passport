@@ -1,0 +1,826 @@
+/*===========GLOBAL CSS=============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #303030;
+    font-family: 'Helvetica';
+    
+}
+@font-face{
+    font-family: 'Helvetica';
+    src: 
+    url("../fonts/Helvetica-01.ttf"),
+    url("../fonts/Helvetica-Bold-02.ttf"),
+    url("../fonts/Helvetica-BoldOblique-04.ttf");    
+    url("../fonts/Helvetica-Light-05.ttf");    
+    url("../fonts/Helvetica-LightOblique-06.ttf");    
+    url("../fonts/Helvetica-Oblique-03.ttf");    
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 38px;
+}
+h2{
+    font-size: 26px;
+    color: #295b82;
+    font-weight: 700;
+    margin: 60px auto 45px;
+}
+.headline h2 {
+    text-align: center;
+    font-size: 36px;
+}
+h3{
+    color: #3e3e3e;
+    font-size: 25px;
+    font-weight: 400;
+}
+.container-fluid{
+    padding: 0;
+}
+.row_margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+.padding_0{
+    padding: 0;
+}
+/*==============custom_css=============*/
+
+/*==============header=============*/
+#header{
+    background-image: url(../image/header_banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.brand {
+  position: absolute;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.brand{
+    max-width: 250px;
+    margin-top: 26px;
+}
+/***
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 70px;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    text-decoration: none;
+    color: #95d2ef;
+}
+
+
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    background-color: #727f8a;
+}
+
+ Mobile navigation 
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+    nav ul {
+        display: none;
+        position: absolute;
+        background: #333;
+        left: 0;
+        right: 0;
+    }
+  nav ul li {
+    float: none;
+      text-align: center;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 4px;
+  width: 33px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+.active {
+    color: #95d2ef !important;
+    font-weight: bold;
+}
+nav ul li a:focus{
+    text-decoration:  none !important;
+}
+/*==================banner_text================*/
+.banner_text h1{
+    color: #fff;
+    text-align: center;
+    margin: 12% auto 18%;
+}
+.banner_text h1 span {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+.service_icon{
+    margin-top: 50px;
+}
+.service_content p {
+    text-align: center;
+    font-weight: 600;
+    margin: 24px 0 26px;
+    font-size: 18px;
+}
+a.learn_more{
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    color: #295b84;
+    padding: 6px;
+    border: 2px solid #bababa;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 26px auto;
+    background-color: #fff;
+    font-size: 15px;
+}
+/*===============payment_service===========*/
+.payment {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.services_box{
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 0 15px;
+}
+.service_box_content{
+    background: #f4f4f4; 
+    text-align: center;
+    padding-bottom: 10px;
+}
+.payment_header{
+    background: #838383;
+    width: 100%;
+    text-align: center;
+}
+.payment_header p{
+    color: #fff; 
+    padding: 36px 0;
+}
+.service_box_content p span{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.small_text{
+    color: #9c9c9c;
+    font-size: 14px;
+    padding: 20px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+/*===============footer================*/
+#footer{
+    background: #2e3b4a;
+    width: 100%;
+}
+.footer_padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.quick_link{
+    margin: 0;
+}
+.quick_link li{
+    list-style: none;
+    margin: 0 0 18px 0;
+}
+.quick_link li a{
+    text-decoration: none;
+    color: #fff;
+}
+.for_hover li a:hover{
+    color: #8bb9d0;
+}
+.footer_menu>P{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.quick_link li a span{
+    font-size: 16px;
+}
+.fb_frame{
+    width: 250px;
+    height: 200px;
+}
+
+
+/*========================NEW_PASSPORT=========================*/
+.service_banner_text h1 {
+    color: #fff;
+    text-align: center;
+    margin: 5% auto 8%;
+}
+.service_banner_text h1 span {
+    font-weight: 700;
+}
+.services_nav_content{
+    margin-bottom: 0
+}
+.services_nav_content li {
+    display: inline-block;
+    padding: 18px 1px 18px;
+}
+.services_nav_content li::after {
+    content: '⦁';
+    padding-left: 8px;
+    color: #9c9c9c;
+}
+.services_nav_content li:last-child::after {
+    display: none;
+}
+.services_nav_content li a{
+    color: #9c9c9c;
+    text-decoration: none;
+    font-size: 12px;
+    list-style: decimal;
+}
+.active_color{
+   color: #6e6e6e;
+   font-weight: 600;
+}
+/*------------content---------------*/
+.passport_header {
+    background: #4f5d6f;
+    display: block;
+    border-radius: 50px;
+    margin: 30px auto 25px;
+}
+.passport_header h3 {
+    color: #fff;
+    padding: 14px;
+    text-align: center;
+    padding-left: 0px;
+}
+.passport_header h3 span{
+    font-weight: 600;
+}
+ul.citizen {
+    margin-left: 1%;
+}
+.citizen li {
+    list-style: none;
+    padding-left: 27px;
+    font-weight: 500;
+    color: #403433;
+}
+.citizen li span{
+    font-weight: 700;
+}
+.right_icon::before{
+    content: '✔';
+    color: #403433;
+    padding-right: 5px;
+    position: absolute;
+    left: 15px;
+}
+.right_icon{
+    padding-left: 30px !important;
+    position: relative;
+}
+a.my_passport{
+    margin-left: 40px !important;
+    color: #72b0ce;
+    font-weight: 600;
+    border-color: #72b0ce;
+}
+
+
+/*----------prosses--------------*/
+
+.passport_content_details{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Process{
+    background: #f4f4f4;
+    border-radius: 50px;
+}
+.text-padding {
+    padding: 18px 24px;
+    margin: 45px auto 25px;
+}
+.text_bold{
+    font-weight: 600;
+}
+.prosses_content li{
+    list-style: none;
+    margin-left: 2%;
+}
+.prosses_content{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.prosses_content p {
+    margin-left: 2%;
+    margin-bottom: 0;
+    max-width: 88%;
+    font-weight: 500;
+}
+.prosses_content p a{
+    text-decoration: none;
+    color: #72b0ce;
+    font-weight: 700;
+}
+/*==========================checklist========================*/
+.passport_checklist{
+    margin-top: 20px;
+}
+.checklist_text{
+    margin: 50px 0;
+}
+.checklist_text p span{
+    font-weight: 600;
+}
+.content_headline h2{
+    margin: 0px 0 30px;
+    color: #72b0ce;
+    font-size: 20px;
+    line-height: 28px;
+}
+.content_headline {
+    position: relative;
+}
+.content_headline::before {
+    content: '⬔';
+    font-size: 29px;
+    position: absolute;
+    left: -26px;
+    top: -1px;
+    font-weight: 400;
+    color: #303030;
+}
+.service_content_text {
+    margin-bottom: 40px;
+}
+.service_content_text p{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.service_content_text p a {
+    text-decoration: none;
+    color: #303030;
+}
+/*======================passport_faq=======================*/
+.passport_faq{
+    margin: 50px 0;
+}
+h4.panel-title i {
+    font-size: 15px;
+    background: #72b0ce;
+    padding: 8px 12px;
+    border-radius: 100%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent; 
+}
+.panel-default {
+    border-color: transparent;
+}
+.panel-title {
+    font-size: 16px;
+    color: #72b0ce;
+    line-height: 22px;
+    font-weight: 600;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: transparent;
+    margin-left: 4%;
+}
+.panel-heading a {
+    text-decoration: none;
+}
+.panel-body h4 {
+    text-transform: capitalize;
+}
+
+/*===========================passport_application=======================*/
+
+.requirement_text {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.requirtment_content {
+    margin-left: 6%;
+}
+.application_text h3 {
+    text-align: center;
+}
+.requirement_text p span{
+    font-weight: 700;
+    font-size: 17px;
+}
+.requirement_text p{
+    margin-bottom: 0px;
+}
+.requirtment_content_text {
+    margin-left: 3%;
+}
+.requirtment_content_text p{
+    margin-bottom: 0;
+    position: relative;
+}
+.requirtment_content_text p::before{
+    position: absolute;
+    left: -8px;
+    content: '-'
+}
+.requirtment_btn {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.requirtment_btn li{
+    list-style: none;
+}
+.left_float li{
+    display: inline-block;
+}
+a.btn_margin {
+    padding: 6px;
+    border: 1px solid #72b0ce;    
+    margin: 5px auto;
+    margin-left: 0 !important;
+    font-weight: 600;
+}
+.btn_left_margin{
+    margin-left: 25%;
+}
+/*====================about====================*/
+.heading_before::before{
+    display: none;
+}
+.about p{
+    margin-bottom: 0;
+}
+.about div h2 {
+    margin-left: 0 !important;
+    line-height: 24px;
+}
+
+/*==================services======================*/
+.passport_services_inner{
+    margin-bottom: 50px;
+}
+.line_margin{
+    margin: 30px 0;
+}
+.listing_width{
+    width: 50%;
+    float: left;
+}
+.listing_services_content li{
+    float: none;
+    list-style: none;
+    margin: 10px 10px 0 10px;
+}
+.listing_services_content li a {
+    text-decoration: none;
+    color: #72b0ce;
+    text-align: center;
+    font-size: 16px;
+}
+ul.listing_services_content {
+    text-align: center;
+}
+/*=======================Supplimental=================*/
+.Supplimental_Forms{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.requirtment_content_text_margin{
+    margin-left: 0
+}
+.requirtment_content_text_margin p::before{
+    display: none;
+}
+/*==================renewal_passport_checklist==================*/
+.renewal_passport_checklist{
+    margin-bottom: 50px;
+}
+
+/*=====================lost_passport====================*/
+.right_icon_position{
+    position: relative;
+    margin-left: 1%;
+}
+.right_icon_position::before {
+    position: absolute;
+    left: 15px;
+}
+/*======================proof_ofcitizenship==================*/
+.botom_margin h2{
+    margin-bottom: 20px;
+}
+.faq_content_text{
+    margin-left: 1%;
+}
+.faq_content_text p a{
+    text-decoration: none;
+    color: #72b0ce;
+}
+
+/*=====================composition_checklist====================*/
+.left_margin_text{
+    margin-left: 25px;
+}
+/***********************changes************************************/
+ul.affiliate_li {
+    list-style: none;
+}
+.location_heading h3 {
+    color: #78b3d0;
+    font-weight: bold;
+    font-size: 18px;
+}
+ul.site_map_li {
+    list-style: none;
+    
+}
+.site_map_li a {
+    text-decoration: none;
+    color: #033;
+}
+li.heading_size {
+    font-weight: bold;
+    font-size: 20px;
+    color: #72b0ce;
+    padding-bottom: 10px; 
+}
+.heading_size a {
+    color: #72b0ce;
+    /* padding-bottom: 10px; */
+}
+button.send_btn {
+    border: none;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #fd7979;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+}
+.contact_us form {
+    margin: 20px 0 20px 0;
+}
+.form-control {
+    
+    height: 45px;
+  
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+ul.contact_link_pages {
+    list-style: none;
+}
+.contact_link_sec {
+    /* background-color: #e6e6e6; */
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+.contact_link {
+    padding: 20px 0px 10px 20px;
+    background-color: #e4e4e4;
+    margin: 40px 30px 20px 30px;
+}
+a.link_color {
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+.contact_link_pages li {
+    /* padding: 5px 0 5px 0; */
+    padding-bottom: 6px;
+}
+.contact_subheading h4 {
+    padding: 10px 0 10px 10px;
+    background: #6461a5;
+    margin: 0px 120px 10px 0px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+a.link_color {
+    text-decoration: none;
+}
+
+/***************************/
+.caret-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+    
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+.dropdown-menu {
+     display: none;
+    text-align: left;
+    list-style: none;
+    background-color: #8c9198;
+    
+}
+.for_bg_color {
+    background-color: #f3f3f3;
+  
+}
+.sec_margin {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.sec_padding {
+    padding-bottom: 16px;
+}
+.sec_padding1 {
+    padding-bottom: 55px;
+}
+.margin_bottom {
+    margin-bottom: 30px;
+}
+.padding_responsive {
+    padding-bottom: 8px;
+}
+
+
+/****************header changes *************/
+
+.body-wrap {
+  position: relative;
+}
+
+
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+        nav {
+    margin-top: 5px;
+    box-shadow: 5px 4px 5px #000;
+}
+
+
+    .navbar-inverse {
+    background-color: transparent;
+    border-color: none;
+    border: none;
+}
+
+nav {
+    margin-top: 0px;
+    box-shadow: 5px 4px 5px #000;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+        .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
